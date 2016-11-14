@@ -53,7 +53,7 @@ Also, this database is not going to include emergencies, where people are likely
 
 #Findings
 
-The most interesting -- and potentially compromising -- findings will be when the data show repeated trips to and from a medical facility. Perhaps someone has kidney failure or cancer and goes to the hospital every Wednesday at 3pm for dialysis or chemo. 
+The most interesting -- and potentially compromising -- findings will be when the data show repeated trips to and from a medical facility. Perhaps someone has kidney failure or cancer, for example, and goes to the hospital every Wednesday at 3pm for dialysis or chemo. Maybe they don't want their family to know. Maybe their job security depends on their boss not knowing. 
 
 There are numerous reasons why someone might elect to keep medical information secret:
 - [Why we don't talk about our illnesses](https://www.psychologytoday.com/blog/contemporary-psychoanalysis-in-action/201211/secrets-and-health-keeping-illness-hidden), by Ruth Livingston
