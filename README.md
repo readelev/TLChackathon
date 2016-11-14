@@ -1,6 +1,5 @@
 #Hospital Hacks
 ##Exposing Medical Conditions through Anonymized Trip Data
-TLC Hackathon Project, 2016
 by Reade Levinson
 
 ![alt tag](http://i.giphy.com/10ub3b5xW3NfDG.gif)
