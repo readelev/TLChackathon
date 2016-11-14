@@ -1,8 +1,16 @@
-#**HospitalHacks**
+#Hospital Hacks
 ##Exposing Medical Conditions through Anonymized Trip Data
+TLC Hackathon Project, 2016
 by Reade Levinson
 
 ![alt tag](http://i.giphy.com/10ub3b5xW3NfDG.gif)
+
+*[Introduction](#Introduction)
+*[Plan of Action](#Plan of Action)
+- [Datasets](######Datasets)
+- [Methodology](######Methodology)
+- [Troubleshooting](######Troubleshooting)
+*[Findings](#Findings)
 
 #Introduction
 
@@ -17,7 +25,7 @@ The Taxi and Limousine Commission isn't covered by HIPPA because the Act regulat
 *\*\*Caveat: Didn't get very far into this project (#election2016 : weary :), so this is more potential than discovery.*
 
 #Plan of Action
-###Datasets
+######Datasets
 
 I used three (3) datasets for this challenge:
 
@@ -27,14 +35,16 @@ I used three (3) datasets for this challenge:
 
 3. Voter registration data for New York, easy (enough) to obtain from [NationBuilder](http://nationbuilder.com/).
 
-###Methodology
+![Imgur](http://i.imgur.com/EIFTid9.png)
+
+######Methodology
 Using numpy and pandas in Python, first split massive trip dataset into smaller, 200k row text files. Bring the trip datasets and list of medical facilities into Python dataframes. When the pickup or dropoff coordinates from a taxi trip match those of a medical facility, add trip to a new database called "Medical Trips." Do the same for each of the smaller, 200k row files. 
 
 At the end, you have a spreadsheet with all the TLC trips taken to/from known medical facilities. 
 
 Geocode the addresses from the voter registration data base and match the database, as much as possible, to the medical trips spreadsheet. 
 
-###Troubleshooting
+######Troubleshooting
 
 This sort of mapping -- using voter registration data to identify individuals -- is faulty at best, especially in New York City which is filled with apartment complexes and multi-family homes. Plus, renters might sublet or taxi miders might simply not be picked up or dropped off at the same address they live at. They might get out of the cap early if they hit traffit...the list goes on. 
 
