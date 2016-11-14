@@ -5,12 +5,12 @@ by Reade Levinson
 
 ![alt tag](http://i.giphy.com/10ub3b5xW3NfDG.gif)
 
-*[Introduction](#Introduction)
-*[Plan of Action](#Plan of Action)
-- [Datasets](######Datasets)
-- [Methodology](######Methodology)
-- [Troubleshooting](######Troubleshooting)
-*[Findings](#Findings)
+- [Introduction](#Introduction)
+- [Plan of Action](#Plan of Action)
+	- [Datasets](###Datasets)
+	- [Methodology](###Methodology)
+	- [Troubleshooting](###Troubleshooting)
+- [Findings](#Findings)
 
 #Introduction
 
@@ -22,10 +22,10 @@ The Taxi and Limousine Commission isn't covered by HIPPA because the Act regulat
 
 **My goal was to identify trips taken to or from medical facilities and the people taking those trips.**
 
-*\*\*Caveat: Didn't get very far into this project (#election2016 : weary :), so this is more potential than discovery.*
+\*\*Caveat: Didn't get very far into this project (#election2016 :weary:), so this is more potential than discovery.
 
 #Plan of Action
-######Datasets
+###Datasets
 
 I used three (3) datasets for this challenge:
 
@@ -37,14 +37,14 @@ I used three (3) datasets for this challenge:
 
 ![Imgur](http://i.imgur.com/EIFTid9.png)
 
-######Methodology
+###Methodology
 Using numpy and pandas in Python, first split massive trip dataset into smaller, 200k row text files. Bring the trip datasets and list of medical facilities into Python dataframes. When the pickup or dropoff coordinates from a taxi trip match those of a medical facility, add trip to a new database called "Medical Trips." Do the same for each of the smaller, 200k row files. 
 
 At the end, you have a spreadsheet with all the TLC trips taken to/from known medical facilities. 
 
 Geocode the addresses from the voter registration data base and match the database, as much as possible, to the medical trips spreadsheet. 
 
-######Troubleshooting
+###Troubleshooting
 
 This sort of mapping -- using voter registration data to identify individuals -- is faulty at best, especially in New York City which is filled with apartment complexes and multi-family homes. Plus, renters might sublet or taxi miders might simply not be picked up or dropped off at the same address they live at. They might get out of the cap early if they hit traffit...the list goes on. 
 
@@ -57,15 +57,17 @@ Also, this database is not going to include emergencies, where people are likely
 The most interesting -- and potentially compromising -- findings will be when the data show repeated trips to and from a medical facility. Perhaps someone has kidney failure or cancer and goes to the hospital every Wednesday at 3pm for dialysis or chemo. 
 
 There are numerous reasons why someone might elect to keep medical information secret:
-*[Why we don't talk about our illnesses](https://www.psychologytoday.com/blog/contemporary-psychoanalysis-in-action/201211/secrets-and-health-keeping-illness-hidden), by Ruth Livingston
-*[9 Diseases People Keep Secret](http://www.everydayhealth.com/healthy-living-pictures/diseases-people-keep-secret.aspx), *[Healthy Living]*
-*[Keeping Cancer a Secret](http://well.blogs.nytimes.com/2013/07/04/keeping-cancer-a-secret/), by Mikkael A. Sekeres, M.D. *[NYT]*
-*[Keeping Death in the Dark](https://www.theguardian.com/lifeandstyle/2016/jan/15/death-in-the-dark-david-bowie-jackie-collins-secret-terminal-illness), by Leo Benedictus *[Guardian]*
+- [Why we don't talk about our illnesses](https://www.psychologytoday.com/blog/contemporary-psychoanalysis-in-action/201211/secrets-and-health-keeping-illness-hidden), by Ruth Livingston
+- [9 Diseases People Keep Secret](http://www.everydayhealth.com/healthy-living-pictures/diseases-people-keep-secret.aspx), *[Healthy Living]*
+- [Keeping Cancer a Secret](http://well.blogs.nytimes.com/2013/07/04/keeping-cancer-a-secret/), by Mikkael A. Sekeres, M.D. *[NYT]*
+- [Keeping Death in the Dark](https://www.theguardian.com/lifeandstyle/2016/jan/15/death-in-the-dark-david-bowie-jackie-collins-secret-terminal-illness), by Leo Benedictus *[Guardian]*
 
 As Nicholas Sparks wrote:
 >I've learned that we're all entitled to have our secrets.
 
+Thanks for reading.
 
+:heart:
 
 
 
