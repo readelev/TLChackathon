@@ -1,7 +1,8 @@
-#TLC Hackathon
-##Finding trip to hospitals
+#Hospital Hacks: Exposing Medical Conditions through Anonymized Trip Data
 
-##TL;DR never finished, here's my plan
+##TLC Hackathon Project, November 2016
+
+Caveat: Didn't get very far into this project (#election2016), so this is more potential than discovery.
 
 ##Methodology
 
@@ -9,19 +10,14 @@ Unlike most European countries, the United States does not have a blanket privac
 
 Consequently, my goal was to pull enough information from the TLC trip data in a way that might jeopardize privacy under one of these specific laws, in this case, the Health Insurance Portability and Accountability Act of 1996 (HIPAA).
 
-(Tbh, don't think TLC is covered by this. HIPAA refers to health care and insurance providers as well as third party "data processors". For the purposes of hackathon, considered TLC as a "Business Associate", defined as a "person or organization...that provides certain services to a covered entity that involve the use or discolouse or individually identifiable health information.")
-
-HIPAA law:
-* No restrictions on the use of deidentifyable information
-* NOT ILLEGAL EVEN IF THIS GOT OUT
-
-Instead, common decency?
-
 **My goal was to identify trips taken to or from medical facilities and the people taking those trips.**
+
+The Taxi and Limousine Commission isn't covered by HIPPA because the Act regulates health care and insurance providers as well as third party "data processors", and TLC fits into none of these categories. However, for the purposes of hackathon, I considered the Commission  a "Business Associate", defined as a "person or organization...that provides certain services to a covered entity that involve the use or disclose or individually identifiable health information." I believe trip data has the potential to disclose identifiable health information, as explained below.
+
 
 ##Datasets
 
-I used three datasets for this challenge:
+I used three (3) datasets for this challenge:
 
 1. Trip data provided by TLC
 
